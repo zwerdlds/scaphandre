@@ -1,0 +1,10 @@
+version: "3"
+services:
+  frontend:
+    build: ./
+    volumes:
+      - "/sys/class/powercap/:/sys/class/powercap/"
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    command: scaphandre prometheus

@@ -102,6 +102,10 @@ This allows to break opacity in a virtualization context, if you have access to 
 
 <img src="https://github.com/hubblo-org/scaphandre/raw/main/virtu.cleaned.png" width="600">
 
+## Docker
+
+Scaphandre can be used with Docker via the included sample `docker-compose.yaml`.  In Swarm or Kubernetes, you probably want to configure your service to run on each host, since the metrics Scaphandre provides are per-host.  Also ensure the host port is appropriate for your use case.  Scaphandre is configured by default to run as a prometheus exporter, which can be configured per the [Getting Started], but you can change this in the `docker-compose.yaml`.
+
 ## Contributing
 
 Feel free to propose pull requests, or open new issues at will. Scaphandre is a collaborative project and all opinions and propositions shall be heard and studied. The contributions will be received with kindness, gratitude and with an open mind. Remember that we are all [dwarfs standing on the shoulders of giants](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants). We all have to learn from others and to give back, with due mutual respect.
